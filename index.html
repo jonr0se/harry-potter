@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marauder’s Map</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="map-nav">
+    <a href="#">Great Hall</a>
+    <a href="#">Library</a>
+    <a href="#">Potions</a>
+    <a href="#">Forbidden Forest</a>
+  </nav>
+
+  <div class="container">
+    <h1 class="title">I Solemnly Swear That I Am Up To No Good</h1>
+
+    <label for="houseSelect">Choose Your House:</label>
+    <select id="houseSelect" onchange="changeHouse()">
+      <option value="gryffindor">Gryffindor</option>
+      <option value="slytherin">Slytherin</option>
+      <option value="ravenclaw">Ravenclaw</option>
+      <option value="hufflepuff">Hufflepuff</option>
+    </select>
+
+    <p class="subtitle">Tap your wand below!</p>
+    <button class="wand-btn" onclick="castSpell()">✨ Lumos</button>
+  </div>
+
+  <audio id="wandSound" src="https://cdn.pixabay.com/audio/2022/10/04/audio_67b2fc44bb.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

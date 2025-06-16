@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'MedievalSharp', cursive;
+  overflow-x: hidden;
+  transition: background 0.8s ease;
+  color: #f0e6d2;
+}
+
+.map-nav {
+  display: flex;
+  justify-content: center;
+  background: #d2b48c;
+  padding: 10px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.map-nav a {
+  color: #3b2f2f;
+  margin: 0 20px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.map-nav a:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.wand-btn {
+  background: #4b2e2e;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.wand-btn:hover {
+  background: #5c3c3c;
+}
+
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkle 0.8s ease-out forwards;
+}
+
+@keyframes sparkle {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+/* House themes */
+body.gryffindor { background: linear-gradient(to right, #740001, #ae0001); }
+body.slytherin  { background: linear-gradient(to right, #1a472a, #2a623d); }
+body.ravenclaw  { background: linear-gradient(to right, #0e1a40, #222f5b); }
+body.hufflepuff { background: linear-gradient(to right, #ffdb00, #ecb939); }
